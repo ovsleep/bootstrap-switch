@@ -1,6 +1,7 @@
 # Angular 2 Bootstrap Switch
 
-This is a Angular 2 Component to add a switch like input. It's basically an import for this: [Bootstrap-Switch](http://www.bootstrap-switch.org/).
+
+This is a Angular 2 Component to add a switch like input. It's basically an Angular 2 port for this: [Bootstrap-Switch](http://www.bootstrap-switch.org/).
 
 ### Installation
 
