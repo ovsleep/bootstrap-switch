@@ -1,0 +1,1 @@
+exports.SwitchComponent = require('./lib/switch.component').SwitchComponent;

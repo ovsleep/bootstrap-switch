@@ -1,0 +1,43 @@
+<div class="container">
+    <h1>Angular 2 Bootstrap-switch</h1>
+    <br/>
+	<div class="row">
+		<div class="col-xs-6 align-middle">
+			<p>
+			    <switch [onText]="onText" [offText]="offText" [onColor]="onColor" [offColor]="offColor" [size]="size">
+    			</switch>
+			</p>
+    <br/>            
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-4">
+			<div class="form-group">
+				<label>On Text</label>
+				<input type="text" [(ngModel)]="onText" class="form-control" />
+			</div>
+			<div class="form-group">
+				<label>Off Text</label>
+				<input type="text" [(ngModel)]="offText" class="form-control" />
+			</div>
+			<div class="form-group">
+				<label for="onColor">On Color</label>
+				<select class="form-control" id="onColor" [(ngModel)]="onColor" name="onColor">
+                    <option *ngFor="let c of colors" [value]="c">{{c}}</option>
+                </select>
+			</div>
+			<div class="form-group">
+				<label for="offColor">Off Color</label>
+				<select class="form-control" id="offColor" [(ngModel)]="offColor" name="offColor">
+                    <option *ngFor="let c of colors" [value]="c">{{c}}</option>
+                </select>
+			</div>
+			<div class="form-group">
+				<label>Size</label>
+				<select class="form-control" id="size" [(ngModel)]="size" name="size">
+                    <option *ngFor="let s of sizes" [value]="s">{{s}}</option>
+                </select>
+			</div>
+		</div>
+	</div>
+</div>
