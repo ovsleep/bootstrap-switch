@@ -66,3 +66,13 @@ All the attributes are optional.
 
 `size`: The size of the switch ("mini"|"small"|"normal"|"large")
 
+### Example
+To see the component in action, here's an example project
+
+```sh
+git clone https://github.com/ovsleep/bootstrap-switch.git
+cd bootstrap-switch
+cd app
+npm install
+npm run all
+```
