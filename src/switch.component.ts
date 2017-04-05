@@ -9,7 +9,6 @@ import {
 
 @Component({
     selector: 'switch',
-    moduleId: module.id,
     template: `<div #main class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-animate bootstrap-switch-off" [ngClass]="_sizeClass"  (click)="toggleStatus()">
 	<div #container class="bootstrap-switch-container"  [@statusChange]="_statusStr" >
         <span #on class="bootstrap-switch-handle-on" [ngClass]="_onColor" [ngStyle]="{'min-width': _minWidth +'px'}">{{onText}}</span>

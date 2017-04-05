@@ -8,23 +8,8 @@ This is a Angular 2 Component to add a switch like input. It's basically an Angu
 ```sh
 $ npm i angular2-bootstrap-switch
 ```
-
-Then, you'll need to add the mapping to the `system.config.js`
-```js
- map: {
-      ...
-      'angular2-bootstrap-switch': 'node_modules/angular2-bootstrap-switch'
-       ...
-    },
-    packages: {
-    ...
-      'angular2-bootstrap-switch':{
-        defaultExtension: 'js'
-      }
-    }
-```
-And add it to your `app.module`
-```js
+Then, add it to your `app.module`
+```ts
 ...
 import { AppComponent }   from './app.component';
 import { SwitchComponent } from 'angular2-bootstrap-switch/components';
