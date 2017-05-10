@@ -32,6 +32,37 @@ For styling purposes, you should add the Bootstrap stylesheet to your `index.htm
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 ```
 
+#### For Angular 4 
+
+Since the animations package was removed from Angular 4, you'll need an extra step.
+
+Install animations package:
+```sh
+$ npm install @angular/animations --save
+```
+
+Then, add it to your `app.module` imports
+```ts
+...
+import { AppComponent }   from './app.component';
+import { SwitchComponent } from 'angular2-bootstrap-switch/components';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+@NgModule({
+  imports:      [ 
+    ...
+	BrowserAnimationsModule
+    ],
+  declarations: [ 
+    AppComponent,
+    SwitchComponent
+  ],
+  bootstrap:    [ AppComponent ]
+})
+export class AppModule { }
+```
+
+
 ### Usage
 In your component template you just need to add the <switch></switch> component with the bindings you want. Like this:
 ```html
@@ -52,7 +83,10 @@ All the attributes are optional.
 `size`: The size of the switch ("mini"|"small"|"normal"|"large")
 
 ### Example
-To see the component in action, here's an example project
+To see the component in action, here's a demo page: [Demo](https://bootstrap-switch.herokuapp.com/)
+
+
+And an example project:
 
 ```sh
 git clone https://github.com/ovsleep/bootstrap-switch.git
