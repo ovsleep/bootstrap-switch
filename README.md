@@ -82,6 +82,10 @@ All the attributes are optional.
 
 `size`: The size of the switch ("mini"|"small"|"normal"|"large")
 
+`disabled`: Boolean value to enable/disabled the switch
+
+`statusChange`: Event fired on status change
+
 ### Example
 To see the component in action, here's a demo page: [Demo](https://bootstrap-switch.herokuapp.com/)
 
