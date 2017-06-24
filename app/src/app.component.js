@@ -18,11 +18,13 @@ var AppComponent = (function () {
         this.onColor = "green";
         this.offColor = "red";
         this.size = "normal";
+        this.disabled = false;
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'home-dashboard',
             templateUrl: "./src/app.component.html",
+            styles: ["\n  /deep/ .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-success,\n  /deep/ .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-success {\n    background: #00f;\n  }\n\n  /deep/ .bootstrap-switch-container{\n    background: #fff ;\n  }\n  "]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

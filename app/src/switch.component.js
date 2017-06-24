@@ -14,11 +14,13 @@ var SwitchComponent = (function () {
         this.el = el;
         this.renderer = renderer;
         this._statusStr = "false";
+        //styles properties
         this._onColor = "bootstrap-switch-info";
         this._offColor = "bootstrap-switch-default";
         this._minWidth = 60;
         this._sizeClass = "bootstrap-switch-normal";
         this._disabledClass = "";
+        //public properties
         this.status = false;
         this.statusChange = new core_1.EventEmitter();
         this.onText = "on";
@@ -143,9 +145,13 @@ var SwitchComponent = (function () {
                     this._setDisabled(value);
                     break;
             }
+            log.push(propName + " changed from " + from + " to " + value);
         }
+        console.log(log.join(', '));
     };
     SwitchComponent.prototype.ngAfterViewInit = function () {
+        // this._calculateSize("normal");
+        // this._calculateWidth();
     };
     __decorate([
         core_1.ViewChild('on'), 

@@ -8,7 +8,7 @@ import { HttpModule }    from '@angular/http';
 
 import { AppComponent }   from './app.component';
 
-import { SwitchComponent } from 'angular2-bootstrap-switch/components';
+import { SwitchComponent } from './switch.component';
 
 
 @NgModule({

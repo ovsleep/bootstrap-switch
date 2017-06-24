@@ -385,7 +385,9 @@ export class SwitchComponent implements OnChanges, AfterViewInit {
                     break;
             }
 
+            log.push(`${propName} changed from ${from} to ${value}`);
         }
+        console.log(log.join(', '));
     }
 
     ngAfterViewInit(){

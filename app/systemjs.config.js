@@ -24,7 +24,7 @@
       // other libraries
       'rxjs':                      'npm:rxjs',
       'angular-in-memory-web-api': 'npm:angular-in-memory-web-api',
-      'angular2-bootstrap-switch': 'node_modules/angular2-bootstrap-switch'
+       //'angular2-bootstrap-switch': 'node_modules/angular2-bootstrap-switch'
        //'@ng-bootstrap/ng-bootstrap': 'node_modules/@ng-bootstrap/ng-bootstrap/bundles/ng-bootstrap.js',
     },
     // packages tells the System loader how to load when no filename and/or no extension
@@ -36,9 +36,9 @@
       rxjs: {
         defaultExtension: 'js'
       },
-      'angular2-bootstrap-switch':{
-        defaultExtension: 'js'
-      }
+      // 'angular2-bootstrap-switch':{
+      //   defaultExtension: 'js'
+      // }
     }
   });
 })(this);

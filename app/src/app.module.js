@@ -15,7 +15,7 @@ var http_1 = require('@angular/http');
 //bootstrap
 //import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 var app_component_1 = require('./app.component');
-var components_1 = require('angular2-bootstrap-switch/components');
+var switch_component_1 = require('./switch.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -28,7 +28,7 @@ var AppModule = (function () {
             ],
             declarations: [
                 app_component_1.AppComponent,
-                components_1.SwitchComponent
+                switch_component_1.SwitchComponent
             ],
             bootstrap: [app_component_1.AppComponent]
         }), 

@@ -13,6 +13,7 @@ export declare class SwitchComponent implements OnChanges, AfterViewInit {
     private _offColor;
     private _minWidth;
     private _sizeClass;
+    private _disabledClass;
     status: boolean;
     statusChange: EventEmitter<boolean>;
     onText: string;
@@ -20,7 +21,9 @@ export declare class SwitchComponent implements OnChanges, AfterViewInit {
     onColor: string;
     offColor: string;
     size: string;
+    disabled: boolean;
     toggleStatus(): void;
+    private _setDisabled(disabled);
     private _setColor(switchLabel, value);
     private _calculateWidth();
     private _calculateSize();
