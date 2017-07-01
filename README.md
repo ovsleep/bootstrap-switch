@@ -88,6 +88,7 @@ All the attributes are optional.
 
 ### Example
 To see the component in action, here's a demo page: [Demo](https://bootstrap-switch.herokuapp.com/)
+To see the component in action, here's a plunk: [Plunker Demo](https://plnkr.co/edit/lGPYXuZtdno1CAA27FfP?p=preview)
 
 
 And an example project:
