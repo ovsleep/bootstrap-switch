@@ -1,0 +1,28 @@
+{
+  "name": "angular2-bootstrap-switch",
+  "version": "0.2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ovsleep/bootstrap-switch.git"
+  },
+  "author": {
+    "name": "ovsleep",
+    "email": "ovsleep@gmail.com"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ovsleep/bootstrap-switch.git/issues"
+  },
+  "main": "angular2-bootstrap-switch.umd.js",
+  "module": "angular2-bootstrap-switch.js",
+  "jsnext:main": "angular2-bootstrap-switch.js",
+  "typings": "angular2-bootstrap-switch.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}
