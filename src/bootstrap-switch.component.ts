@@ -320,6 +320,7 @@ export class BootstrapSwitchComponent implements OnChanges, AfterViewInit {
       this.renderer.setElementStyle(this._onSpan.nativeElement, 'width', '');
       this.renderer.setElementStyle(this._midSpan.nativeElement, 'width', '');
       this.renderer.setElementStyle(this._offSpan.nativeElement, 'width', '');
+      this.renderer.setElementStyle(this._main.nativeElement, "width", "");
 
       const width = Math.max(this._onSpan.nativeElement.clientWidth, this._offSpan.nativeElement.clientWidth, this._minWidth);
 
