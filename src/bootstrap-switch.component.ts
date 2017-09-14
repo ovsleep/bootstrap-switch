@@ -1,5 +1,5 @@
 import {
-  Component, Input, ElementRef, Output, EventEmitter, OnChanges, SimpleChange, ViewChild, Renderer, AfterViewInit,
+  Component, Input, ElementRef, Output, EventEmitter, OnChanges, SimpleChange, ViewChild, Renderer, AfterViewInit, AfterViewChecked,
   trigger,
   state,
   style,
@@ -225,7 +225,7 @@ import {
     ])
   ]
 })
-export class BootstrapSwitchComponent implements OnChanges, AfterViewInit {
+export class BootstrapSwitchComponent implements OnChanges, AfterViewInit, AfterViewChecked {
 
   @ViewChild('on') _onSpan: ElementRef;
   @ViewChild('off') _offSpan: ElementRef;
@@ -253,6 +253,7 @@ export class BootstrapSwitchComponent implements OnChanges, AfterViewInit {
   _minWidth = 60;
   _sizeClass = 'bootstrap-switch-normal';
   _disabledClass = '';
+  _needCalculateWidth = false;
 
   constructor(private el: ElementRef, private renderer: Renderer) {
     this._calculateSize();
@@ -352,7 +353,14 @@ export class BootstrapSwitchComponent implements OnChanges, AfterViewInit {
         break;
     }
 
-    this._calculateWidth();
+    this._needCalculateWidth = true;
+  }
+
+  ngAfterViewChecked(){
+    if(this._needCalculateWidth){
+      this._calculateWidth();
+      this._needCalculateWidth = false;
+    }
   }
 
   ngOnChanges(changes: { [propKey: string]: SimpleChange }) {
@@ -365,10 +373,10 @@ export class BootstrapSwitchComponent implements OnChanges, AfterViewInit {
 
         switch (propName) {
           case 'onText':
-            this._calculateWidth();
+            this._needCalculateWidth = true;
             break;
           case 'offText':
-            this._calculateWidth();
+            this._needCalculateWidth = true;
             break;
           case 'onColor':
             this._setColor('on', value);
